@@ -1,0 +1,68 @@
+.content {
+
+    display: flex;
+    flex-direction: row;
+    
+    
+    
+}
+
+.primary-content {
+    background-color: $secondary-normal;
+    width: 20%;
+    min-height: 80vh;
+    flex-direction: column;
+    
+    padding-top: 15px;
+    padding-left: 15px;
+    
+    h2 {
+    color: #4c1d95;
+    box-shadow: 0 -1px 17px -4px rgba(0, 255, 255, 0.45);
+    
+    }
+    
+    
+}
+
+
+
+.second-content {
+    background-color: transparent;
+    width: 80%;
+    min-height: 80vh;
+}
+
+ul {
+    
+    li {
+        margin: 8px 0;
+        
+    }
+    a {
+    font-size: 24px;
+    //padding: 38px 0;
+    }
+    
+    :hover {
+        a{
+            transition: color 0.5s;
+            color: $red-dark;
+            
+        }
+    }
+
+}
+
+//----------------------------------------------------------------
+
+section h2 {
+    
+    padding-top: 15px;
+    padding-left: 32px;
+    font-size: 32px;
+    color: #4c1d95;
+    
+
+}
+

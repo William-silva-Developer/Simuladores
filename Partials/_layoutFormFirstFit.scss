@@ -1,0 +1,83 @@
+.second-content {
+    background-color: transparent;
+    width: 80%;
+    min-height: 80vh;
+}
+
+ul {
+    
+    li {
+        margin: 8px 0;
+        
+    }
+    a {
+    font-size: 24px;
+    //padding: 38px 0;
+    }
+    
+    :hover {
+        a{
+            transition: color 0.5s;
+            color: $red-dark;
+            
+        }
+    }
+
+}
+
+//----------------------------------------------------------------
+
+section h2 {
+    
+    padding-top: 15px;
+    padding-left: 32px;
+    font-size: 32px;
+    color: #4c1d95;
+    
+}
+
+.memoryAllocation {
+
+    
+    box-shadow: 0 -1px 17px -4px rgba(0, 255, 255, 0.45);
+    background-color: $secondary-dark;
+    flex-direction: column;
+    flex: 1;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 10px;
+    padding: 8px 6px;
+    .input {
+        
+        margin: 5px 2px;
+        height: 30px;
+    }
+    
+    button {
+        
+        padding: 8px 10px;
+        background-color: $red-dark;
+        color: $white-normal;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.8s;
+        
+        
+    }
+
+}
+
+button:hover {
+
+background-color: $violet;
+
+
+}
+
+.resultado {
+    
+    padding: 8px 10px;
+    max-width: 60%;
+    margin-left: 5%;
+}
+

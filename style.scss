@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none
+    
+}
+
+@import "./Partials/colors";
+@import "./Partials/header";
+@import "./Partials/layout";
+@import "./Partials/layoutFormFirstFit";
+@import "./Partials/layoutFormRoundRobin";
+
+
+body {
+    font-family: 'Sora', sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: $primary-normal;
+    color: $white-normal;
+}
+
+a {
+
+    color: #eef2ff;
+
+}
