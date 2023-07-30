@@ -1,0 +1,27 @@
+
+
+.second-process {
+    width: 75%;
+ //  padding: 10px;
+    display: block;
+    justify-content: space-between;
+    
+    
+}
+
+.processForm {
+    
+    background-color: $secondary-dark;
+        width: 25rem;
+        padding: 6px 10px;
+        margin-left: 2rem;
+        
+        input {
+            
+            display: block;
+        }
+}
+
+#executionOrder {
+    display: block;
+}

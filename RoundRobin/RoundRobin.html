@@ -88,30 +88,38 @@
                 
                     <div class="content-input">
                         <label for="processos">Processos:</label>
-                        <input type="text" id="processos"  class="input" required>
+                        <input type="text" placeholder="Exemplo: P1,P2,P3" id="processos"  class="input" required>
                     </div>
             
                     <div class="content-input">
                         <label for="temposExecucao">Tempos de Execução (separados por vírgula):</label>
-                        <input type="text" id="temposExecucao"  class="input" required>
+                        <input type="text" placeholder="Exemplo: 4,5,2" id="temposExecucao"  class="input" required>
                     </div>
             
                     <div class="content-input">
                         <label for="quantum">Quantum:</label>
-                        <input type="number" id="quantum"  class="input" required>
+                        <input type="number" placeholder="Exemplo: 3" id="quantum"  class="input" required>
                     </div>
             
                     <button type="button" onclick="executarRoundRobin()">Executar Round Robin</button>
                 </form>
-                
-                <div id="result-fila"></div>
-                
-                <div id="result-tempo"></div>
-                
-                <div id="result-tempo-espera"></div>
-            
+                            
             </section>
+            
+            
         </div>
+        
+        <div class="results">
+            <h3>Resultado:</h3>
+            <div class="fila" id="result-fila"></div>
+        
+            <div class="tempo" id="result-tempo"></div>
+            
+            <div class="tempo-espera" id="result-tempo-espera"></div>
+        
+        </div>
+        
+        
     
     </div>
 

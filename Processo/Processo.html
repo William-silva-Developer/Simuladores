@@ -24,69 +24,102 @@
     </head>
 
 
-<body>
+    <body>
 
-    <div class="bg-home">
-        <header>
-            <nav class="header-content container">
+        <div class="bg-home">
+            <header>
+                <nav class="header-content container">
+                    
+                    <div class="header-icons">
+                        
+                        <a href="#">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                        
+                        <a href="#">
+                            <i class="fa-brands fa-facebook fa-2x"></i>
+                        </a>
+                        
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                        </a>
+                    
+                    </div>
+                    
+                </nav>
                 
-                <div class="header-icons">
+                <div class="hero container">
                     
-                    <a href="#">
-                        <i class="fa-brands fa-instagram fa-2x"></i>
-                    </a>
+                    <h1>SIMULADORES DE ALGORITMOS COM JAVASCRIPT</h1>
                     
-                    <a href="#">
-                        <i class="fa-brands fa-facebook fa-2x"></i>
-                    </a>
-                    
-                    <a href="#">
-                        <i class="fa-brands fa-linkedin fa-2x"></i>
-                    </a>
-                
                 </div>
-                
-            </nav>
+            </header>
             
-            <main class="hero container">
-                
-                <h1>SIMULADORES DE ALGORITMOS COM JAVASCRIPT</h1>
-                
-            </main>
-        </header>
+        </div >
+          
+        <main>
+            <div class='content'>
         
-    </div >
-      
-    
-    <div class='content'>
-    
-        <div class="primary-content">
-            
-            <h2>Simuladores</h2>
-            
-            <ul>
-                <li style="color: #2563eb;"><a href="../index.html">Relatório</a></li>
-                <li style="color: #2563eb;"><a href="../First-fit/FirstFit.html">First-Fit</a></li>
-                <li style="color: #2563eb;"><a href="../RoundRobin//RoundRobin.html">Round Robin</a></li>
-                <li style="color: #2563eb;"><a href="../Prioridade/Prioridade.html">Escalonador por prioridade</a></li>
-                <li style="color: #2563eb;"><a href="../BestFit/BestFit.html">Best-Fit</a></li>
-                <li style="color: #2563eb;"><a href="../Preemptiva/Preemptiva.html">Preemptiva</a></li>
-                <li style="color: #2563eb;"><a href="./Processo.html">Escalonador de processos</a></li>
-            </ul>
+                <section class="primary-content">
+                    
+                    
+                        <h2>Simuladores</h2>
+                        
+                        <ul>
+                            <li style="color: #2563eb;"><a href="../index.html">Relatório</a></li>
+                            <li style="color: #2563eb;"><a href="../First-fit/FirstFit.html">First-Fit</a></li>
+                            <li style="color: #2563eb;"><a href="../RoundRobin//RoundRobin.html">Round Robin</a></li>
+                            <li style="color: #2563eb;"><a href="../Prioridade/Prioridade.html">Escalonador por prioridade</a></li>
+                            <li style="color: #2563eb;"><a href="../BestFit/BestFit.html">Best-Fit</a></li>
+                            <li style="color: #2563eb;"><a href="../Preemptiva/Preemptiva.html">Preemptiva</a></li>
+                            <li style="color: #2563eb;"><a href="./Processo.html">Escalonador de processos</a></li>
+                        </ul>
+                            
+                            
+                        
                 
                 
-            
-        </div>
-        
-        <div class="second-content">
-            
-            <section>
-                <p>Container 2</p>
-            </section>
-        </div>
-    
-    </div>
+                </section>
+                
+                <section class="second-process">
+                
+                    
+                        <h2>Simulador de Escalonamento de Processos</h2>
+                        
+                        <div class="processForm">
+                        
+                              <form id="processForm">
+                              
+                                <label for="processes">Processos:</label>
+                                <textarea id="processes" rows="4" cols="40" placeholder="Insira os processos no formato: id,memória,tempo;..."></textarea>
+                                <br>
+                                <label for="totalMemorySize">Tamanho total da memória:</label>
+                                <input type="number" id="totalMemorySize" required>
+                                <br>
+                                <label for="quantum">Quantum:</label>
+                                <input type="number" id="quantum" required>
+                                <br>
+                                <button type="submit" class="btn-button">Executar</button>
+                              </form>
+                              
+                              <h3>Resultado da Execução</h3>
 
-    
-</body>
+                        </div>
+                        
+                        <div id="executionOrder"></div>
+                        
+                          
+                        
+                          
+                
+                
+                </section>
+            
+            </div>
+        
+        
+        </main>
+        
+        <script src="./script.js"></script>
+    </body>
 </html>

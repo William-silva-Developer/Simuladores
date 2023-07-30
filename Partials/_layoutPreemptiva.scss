@@ -1,0 +1,45 @@
+
+.content {
+    display: flex;
+   background-color: transparent;
+   
+
+
+}
+
+
+.primary-content {
+    width: 25%;
+}
+
+.second-content {
+    width: 75%;
+ //  padding: 10px;
+    display: block;
+    justify-content: space-between;
+    
+    div{
+        background-color: $secondary-dark;
+        width: 25rem;
+        padding: 6px 10px;
+        margin-left: 2rem;
+        
+        
+        
+        
+        
+        input {
+            display: block;
+            
+        }
+    }
+}
+
+
+.processo {
+    margin-bottom: 1rem;
+}
+
+.resultados {
+    margin-bottom: 1rem;
+}

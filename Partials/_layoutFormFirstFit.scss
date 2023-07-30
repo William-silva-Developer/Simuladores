@@ -32,7 +32,7 @@ section h2 {
     padding-top: 15px;
     padding-left: 32px;
     font-size: 32px;
-    color: #4c1d95;
+    color: $violet;
     
 }
 
@@ -53,31 +53,23 @@ section h2 {
         height: 30px;
     }
     
-    button {
-        
-        padding: 8px 10px;
-        background-color: $red-dark;
-        color: $white-normal;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.8s;
-        
-        
-    }
+  
 
 }
 
-button:hover {
 
-background-color: $violet;
-
-
-}
 
 .resultado {
     
     padding: 8px 10px;
     max-width: 60%;
     margin-left: 5%;
+    margin-bottom: 20px;
+    background-color: $black-dark;
+    width: 40%;
+    
+    
 }
+
+
 

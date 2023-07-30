@@ -48,45 +48,80 @@
                 
             </nav>
             
-            <main class="hero container">
+            <div class="hero container">
                 
                 <h1>SIMULADORES DE ALGORITMOS COM JAVASCRIPT</h1>
                 
-            </main>
+            </div>
         </header>
         
     </div >
       
+    <main>
+        <div class='content'>
     
-    <div class='content'>
-    
-        <div class="primary-content">
-            
-            <h2>Simuladores</h2>
-            
-            <ul>
-                <li style="color: #2563eb;"><a href="../index.html">Relatório</a></li>
-                <li style="color: #2563eb;"><a href="../First-fit/FirstFit.html">First-Fit</a></li>
-                <li style="color: #2563eb;"><a href="../RoundRobin/RoundRobin.html">Round Robin</a></li>
-                <li style="color: #2563eb;"><a href="../Prioridade/Prioridade.html">Escalonador por prioridade</a></li>
-                <li style="color: #2563eb;"><a href="../BestFit/BestFit.html">Best-Fit</a></li>
-                <li style="color: #2563eb;"><a href="./Preemptiva.html">Preemptiva</a></li>
-                <li style="color: #2563eb;"><a href="../Processo/Processo.html">Escalonador de processos</a></li>
-            </ul>
+            <section class="primary-content">
                 
                 
+                    <h2>Simuladores</h2>
+                    
+                    <ul>
+                        <li style="color: #2563eb;"><a href="../index.html">Relatório</a></li>
+                        <li style="color: #2563eb;"><a href="../First-fit/FirstFit.html">First-Fit</a></li>
+                        <li style="color: #2563eb;"><a href="../RoundRobin/RoundRobin.html">Round Robin</a></li>
+                        <li style="color: #2563eb;"><a href="../Prioridade/Prioridade.html">Escalonador por prioridade</a></li>
+                        <li style="color: #2563eb;"><a href="../BestFit/BestFit.html">Best-Fit</a></li>
+                        <li style="color: #2563eb;"><a href="./Preemptiva.html">Preemptiva</a></li>
+                        <li style="color: #2563eb;"><a href="../Processo/Processo.html">Escalonador de processos</a></li>
+                    </ul>
+                        
+                        
+                    
             
-        </div>
-        
-        <div class="second-content">
             
-            <section>
-                <p>Container 2</p>
             </section>
+            
+            <section class="second-content">
+            
+                
+                    <h2>Escalonamento por Prioridade Preemptiva</h2>
+                    
+                    <div>
+                        <form id="formProcesso">
+                            <label for="id">ID do Processo:</label>
+                            <input type="number" id="id" required>
+                            <label for="tempoExecucao">Tempo de Execução:</label>
+                            <input type="number" id="tempoExecucao" required>
+                            <label for="prioridade">Prioridade:</label>
+                            <input type="number" id="prioridade" required>
+                            
+                            <button type="button" class="btn-button" onclick="adicionarProcesso()">Adicionar Processo</button>
+                            <button type="button" class="btn-button" onclick="calcularEscalonamento()">Calcular Escalonamento</button>
+                          </form>
+                          
+                          <h3 class="processo">Processos:</h3>
+                          <ul id="listaProcessos">
+                          </ul>
+                          
+                          <h3 class="resultados">Resultados:</h3>
+                          <span id="tempoTotalExecucao"></span>
+                          <span id="tempoMedioEspera"></span>
+                    
+                    
+                    </div>
+                    
+                      
+                    
+                      
+            
+            
+            </section>
+        
         </div>
     
-    </div>
-
     
+    </main>
+    
+    <script src="./script.js"></script>
 </body>
 </html>

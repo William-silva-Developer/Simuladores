@@ -135,23 +135,14 @@ section h2 {
   margin: 5px 2px;
   height: 30px;
 }
-.memoryAllocation button {
-  padding: 8px 10px;
-  background-color: #b42b2d;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.8s;
-}
-
-button:hover {
-  background-color: #4c1d95;
-}
 
 .resultado {
   padding: 8px 10px;
   max-width: 60%;
   margin-left: 5%;
+  margin-bottom: 20px;
+  background-color: #161617;
+  width: 40%;
 }
 
 .round {
@@ -187,6 +178,68 @@ button:hover {
   background-color: #4c1d95;
 }
 
+.results {
+  padding: 8px 10px;
+  max-width: 40%;
+  margin-left: 5%;
+  margin-bottom: 0.9rem;
+  background-color: #161617;
+  width: 40%;
+  margin-right: 1.8rem;
+}
+
+.content {
+  display: flex;
+  background-color: transparent;
+}
+
+.primary-content {
+  width: 25%;
+}
+
+.second-content {
+  width: 75%;
+  display: block;
+  justify-content: space-between;
+}
+.second-content div {
+  background-color: #06090c;
+  width: 25rem;
+  padding: 6px 10px;
+  margin-left: 2rem;
+}
+.second-content div input {
+  display: block;
+}
+
+.processo {
+  margin-bottom: 1rem;
+}
+
+.resultados {
+  margin-bottom: 1rem;
+}
+
+.second-process {
+  width: 75%;
+  display: block;
+  justify-content: space-between;
+}
+
+.processForm {
+  background-color: #06090c;
+  width: 25rem;
+  padding: 6px 10px;
+  margin-left: 2rem;
+}
+.processForm input {
+  display: block;
+}
+
+#executionOrder {
+  display: block;
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
@@ -198,4 +251,27 @@ body {
 
 a {
   color: #eef2ff;
+}
+
+h1 {
+  font-family: "Sora", sans-serif;
+}
+
+.btn-button {
+  margin: 8px auto;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-button:hover {
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.7);
+}
+
+h3 {
+  color: #008000;
 }/*# sourceMappingURL=style.css.map */
