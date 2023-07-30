@@ -81,12 +81,14 @@
             
             </section>
             
-            <section class="second-content">
-            
+            <section class="second-content-form">
                 
-                    <h2>Escalonamento por Prioridade Preemptiva</h2>
                     
-                    <div>
+                <h2>Escalonamento por Prioridade Preemptiva</h2>
+                
+                <div class="form-preemptivo">
+                    <div >
+                        
                         <form id="formProcesso">
                             <label for="id">ID do Processo:</label>
                             <input type="number" id="id" required>
@@ -97,25 +99,47 @@
                             
                             <button type="button" class="btn-button" onclick="adicionarProcesso()">Adicionar Processo</button>
                             <button type="button" class="btn-button" onclick="calcularEscalonamento()">Calcular Escalonamento</button>
-                          </form>
-                          
-                          <h3 class="processo">Processos:</h3>
-                          <ul id="listaProcessos">
-                          </ul>
-                          
-                          <h3 class="resultados">Resultados:</h3>
-                          <span id="tempoTotalExecucao"></span>
-                          <span id="tempoMedioEspera"></span>
-                    
-                    
+                        </form>
+                        
                     </div>
                     
-                      
+               
+                       <div class="area-results">
+                        <h3>Processos:</h3>
+                        <div class="listaProcessos">
+                            <ul id="listaProcessos">
+                            </ul>
+                            
+                            <ul id="tempo-Execucao">
+                            </ul>
+                            
+                            <ul id="listaPrioridades">
+                            </ul>
+                            
+                        </div>
+                        
+                        <h3>Resultado:</h3>
+                        <div class="resultados">
+                            
+                            <span id="tempoTotalExecucao"></span></br>
+                            <span id="tempoMedioEspera"></span>
+                            
+                        </div>
+                       
+                       </div>
+                        
+                        
+             
                     
-                      
-            
-            
-            </section>
+                
+                </div>
+                
+                  
+                
+                  
+        
+        
+        </section>
         
         </div>
     

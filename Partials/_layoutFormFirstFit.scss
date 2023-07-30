@@ -36,28 +36,35 @@ section h2 {
     
 }
 
-.memoryAllocation {
 
+
+
+.second-content-form {
+    width: 90%;
+ //  padding: 10px;
+    display: block;
+    justify-content: space-between;
     
-    box-shadow: 0 -1px 17px -4px rgba(0, 255, 255, 0.45);
-    background-color: $secondary-dark;
-    flex-direction: column;
-    flex: 1;
-    width: 40%;
-    margin-left: 5%;
-    margin-top: 10px;
-    padding: 8px 6px;
-    .input {
+    .form{
+      
+        width: 70%;
+        height: 410px;
+        margin-bottom: 2rem;
+        padding: 6px 10px;
+        margin-left: 2rem;
+        display: flex;
+        justify-content: space-around;
         
-        margin: 5px 2px;
-        height: 30px;
+        
+        
+        
+        
+        input {
+            display: block;
+            
+        }
     }
-    
-  
-
 }
-
-
 
 .resultado {
     

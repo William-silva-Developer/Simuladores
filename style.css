@@ -121,19 +121,22 @@ section h2 {
   color: #4c1d95;
 }
 
-.memoryAllocation {
-  box-shadow: 0 -1px 17px -4px rgba(0, 255, 255, 0.45);
-  background-color: #06090c;
-  flex-direction: column;
-  flex: 1;
-  width: 40%;
-  margin-left: 5%;
-  margin-top: 10px;
-  padding: 8px 6px;
+.second-content-form {
+  width: 90%;
+  display: block;
+  justify-content: space-between;
 }
-.memoryAllocation .input {
-  margin: 5px 2px;
-  height: 30px;
+.second-content-form .form {
+  width: 70%;
+  height: 410px;
+  margin-bottom: 2rem;
+  padding: 6px 10px;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.second-content-form .form input {
+  display: block;
 }
 
 .resultado {
@@ -195,29 +198,52 @@ button:hover {
 
 .primary-content {
   width: 25%;
+  height: 100%;
 }
 
-.second-content {
-  width: 75%;
+.second-content-form {
+  width: 90%;
   display: block;
   justify-content: space-between;
 }
-.second-content div {
-  background-color: #06090c;
-  width: 25rem;
+.second-content-form .form-preemptivo {
+  min-width: 70%;
+  height: 100%;
+  margin-bottom: 2rem;
   padding: 6px 10px;
-  margin-left: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
 }
-.second-content div input {
+.second-content-form .form-preemptivo div {
+  margin-right: 0.8rem;
+}
+.second-content-form .form-preemptivo input {
   display: block;
 }
 
-.processo {
-  margin-bottom: 1rem;
+.area-results {
+  background-color: transparent;
+  flex: 1;
+}
+
+.listaProcessos {
+  padding: 8px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #161617;
+  flex: 1;
+  min-height: 30%;
 }
 
 .resultados {
-  margin-bottom: 1rem;
+  padding: 8px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #161617;
+  flex: 1;
+  min-height: 30%;
+  display: block;
 }
 
 .second-process {
@@ -274,4 +300,9 @@ h1 {
 
 h3 {
   color: #008000;
+}
+
+input {
+  display: block;
+  height: 30px;
 }/*# sourceMappingURL=style.css.map */

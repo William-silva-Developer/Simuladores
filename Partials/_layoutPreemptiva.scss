@@ -10,22 +10,32 @@
 
 .primary-content {
     width: 25%;
+    height: 100%;
 }
 
-.second-content {
-    width: 75%;
- //  padding: 10px;
+
+
+
+.second-content-form {
+    width: 90%;
     display: block;
     justify-content: space-between;
     
-    div{
-        background-color: $secondary-dark;
-        width: 25rem;
+    .form-preemptivo{
+        min-width: 70%;
+        height: 100%;
+        margin-bottom: 2rem;
         padding: 6px 10px;
-        margin-left: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: flex;
         
         
         
+        
+        div {
+        margin-right: .8rem;
+        }
         
         
         input {
@@ -36,10 +46,31 @@
 }
 
 
-.processo {
-    margin-bottom: 1rem;
+.area-results {
+    
+    background-color: transparent;
+    flex: 1;
+
+}
+
+.listaProcessos {
+    
+    padding: 8px 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: $black-dark;
+    flex: 1;
+    min-height: 30%;
+    
 }
 
 .resultados {
-    margin-bottom: 1rem;
+    
+    padding: 8px 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: $black-dark;
+    flex: 1;
+    min-height: 30%;
+    display: block;
 }

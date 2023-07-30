@@ -36,12 +36,14 @@ function allocateMemory() {
         
         //SE O FOR DIFERENTE DO VALOR DO "allocatedBlockIndex".
         resultElement.textContent = `Alocado no Bloco ${allocatedBlockIndex + 1}.`;
+        console.log(allocatedBlockIndex + 1)
         
         
     } else {
     
         //SE O FOR IGUAL AO VALOR DO "allocatedBlockIndex" NENHUM BLOCO FOI ALOCADO
         resultElement.textContent = 'Nenhum bloco adequado foi encontrado.';
+        console.log("Nenhum bloco adequado foi encontrado.")
     
     }
 }

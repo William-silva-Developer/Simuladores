@@ -18,17 +18,43 @@ const processos = [];
     }
 
     function atualizarListaProcessos() {
+    
       const listaProcessos = document.getElementById("listaProcessos");
+      
+      const tempoExecucao = document.getElementById("tempo-Execucao");
+      
+      const listaPrioridades = document.getElementById("listaPrioridades");
+      
       listaProcessos.innerHTML = "";
+      
+      tempoExecucao.innerHTML = "";
+      
+      listaPrioridades.innerHTML = "";
+      
       processos.forEach((processo) => {
-        const listItem = document.createElement("li");
-        listItem.textContent = `Processo ${processo.id} - Tempo de Execução: ${processo.tempoExecucao} - Prioridade: ${processo.prioridade}`;
-        listaProcessos.appendChild(listItem);
+      
+        const listItemId = document.createElement("li");
+        
+        const listItemTempoExec = document.createElement("li");
+        
+        const listItemPrioridade = document.createElement("li");
+        
+        
+        listItemId.textContent = `Processo ${processo.id}`;
+        listaProcessos.appendChild(listItemId);
+        
+        listItemTempoExec.textContent = `Tempo de Execução: ${processo.tempoExecucao}`;
+        tempoExecucao.appendChild(listItemTempoExec);
+        
+        listItemPrioridade.textContent = `Prioridade: ${processo.prioridade}`;
+        listaPrioridades.appendChild(listItemPrioridade);
+        
       });
     }
 
     function calcularEscalonamento() {
       const resultado = prioridadePreemptiva(processos);
+      
       document.getElementById("tempoTotalExecucao").textContent = `Tempo total de execução: ${resultado.tempoTotalExecucao}`;
       document.getElementById("tempoMedioEspera").textContent = `Tempo médio de espera: ${resultado.tempoMedioEspera.toFixed(2)}`;
     }

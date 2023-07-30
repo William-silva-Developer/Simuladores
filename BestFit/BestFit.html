@@ -78,11 +78,55 @@
             
         </div>
         
-        <div class="second-content">
+        <div class="second-content-form">
             
-            <section>
-                <h2>Best Fit </h2>
-            </section>
+            <section class="second-content-FirstFit">
+                
+                    
+                <h2>Escalonamento por Prioridade Preemptiva</h2>
+                
+                <div class="form">
+                    <div >
+                        <form id="memoryAllocationForm">
+                            <label for="block1">Bloco 1:</label>
+                            <input type="number" id="block1" >
+                    
+                            <label for="block2">Bloco 2:</label>
+                            <input type="number" id="block2">
+                    
+                            <label for="block3">Bloco 3:</label>
+                            <input type="number" id="block3">
+                    
+                            <label for="block4">Bloco 4:</label>
+                            <input type="number" id="block4">
+                    
+                            <label for="block5">Bloco 5:</label>
+                            <input type="number" id="block5">
+                    
+                            <label for="block6">Bloco 6:</label>
+                            <input type="number" id="block6">
+                    
+                            <label for="requiredSize">Tamanho Necessário:</label>
+                            <input type="number" id="requiredSize">
+                    
+                            <button  type="button" class="btn-button" onclick="allocateMemory()">Alocar Memória</button>
+                        </form>
+                    </div>
+                    
+                        <h3>Resultado:</h3>
+                        <div class="resultado">
+                            <span id="result"></span>
+                        </div>
+                    
+                
+                </div>
+                
+                  
+                
+                  
+        
+        
+        </section>
         </div>
     
     </div>
