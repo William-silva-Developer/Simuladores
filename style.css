@@ -149,8 +149,6 @@ section h2 {
 }
 
 .round {
-  box-shadow: 0 -1px 17px -4px rgba(0, 255, 255, 0.45);
-  background-color: #06090c;
   flex-direction: column;
   flex: 1;
   width: 60%;
@@ -158,37 +156,6 @@ section h2 {
   margin-top: 10px;
   padding: 10px 15px;
   height: 40vh;
-}
-.round .content-input {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 8px;
-}
-.round .input {
-  margin: 1px 2px;
-  height: 35px;
-}
-.round button {
-  padding: 8px 10px;
-  background-color: #b42b2d;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.8s;
-}
-
-button:hover {
-  background-color: #4c1d95;
-}
-
-.results {
-  padding: 8px 10px;
-  max-width: 40%;
-  margin-left: 5%;
-  margin-bottom: 0.9rem;
-  background-color: #161617;
-  width: 40%;
-  margin-right: 1.8rem;
 }
 
 .content {

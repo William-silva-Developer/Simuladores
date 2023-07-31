@@ -86,22 +86,22 @@
                 
                 <form id="meuFormulario" class="round">
                 
-                    <div class="content-input">
+                
                         <label for="processos">Processos:</label>
-                        <input type="text" placeholder="Exemplo: P1,P2,P3" id="processos"  class="input" required>
-                    </div>
+                        <input type="text" placeholder="Exemplo: P1,P2,P3" id="processos"  required>
+        
             
-                    <div class="content-input">
+                    
                         <label for="temposExecucao">Tempos de Execução (separados por vírgula):</label>
-                        <input type="text" placeholder="Exemplo: 4,5,2" id="temposExecucao"  class="input" required>
-                    </div>
+                        <input type="text" placeholder="Exemplo: 4,5,2" id="temposExecucao"   required>
+                    
             
-                    <div class="content-input">
+                    
                         <label for="quantum">Quantum:</label>
-                        <input type="number" placeholder="Exemplo: 3" id="quantum"  class="input" required>
-                    </div>
+                        <input type="number" placeholder="Exemplo: 3" id="quantum"  required>
+                
             
-                    <button type="button" onclick="executarRoundRobin()">Executar Round Robin</button>
+                    <button class="btn-button" type="button" onclick="executarRoundRobin()">Executar Round Robin</button>
                 </form>
                             
             </section>
@@ -109,7 +109,7 @@
             
         </div>
         
-        <div class="results">
+        <div class="resultado" style="margin-right: 6rem; margin-top: 5rem;">
             <h3>Resultado:</h3>
             <div class="fila" id="result-fila"></div>
         
