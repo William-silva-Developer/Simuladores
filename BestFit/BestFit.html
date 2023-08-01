@@ -24,91 +24,100 @@
     </head>
 
 
-<body>
+    <body>
 
-    <div class="bg-home">
-        <header>
-            <nav class="header-content container">
-                
-                <div class="header-icons">
+        <div class="bg-home">
+            <header>
+                <nav class="header-content container">
                     
-                    <a href="#">
-                        <i class="fa-brands fa-instagram fa-2x"></i>
-                    </a>
+                    <div class="header-icons">
+                        
+                        <a href="#">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                        
+                        <a href="#">
+                            <i class="fa-brands fa-facebook fa-2x"></i>
+                        </a>
+                        
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                        </a>
                     
-                    <a href="#">
-                        <i class="fa-brands fa-facebook fa-2x"></i>
-                    </a>
-                    
-                    <a href="#">
-                        <i class="fa-brands fa-linkedin fa-2x"></i>
-                    </a>
-                
-                </div>
-                
-            </nav>
-            
-            <main class="hero container">
-                
-                <h1>SIMULADORES DE ALGORITMOS COM JAVASCRIPT</h1>
-                
-            </main>
-        </header>
-        
-    </div >
-      
-    
-    <div class='content'>
-    
-        <div class="primary-content">
-            
-            <h2>Simuladores</h2>
-            
-            <ul>
-                <li style="color: #2563eb;"><a href="../index.html">Relatório</a></li>
-                <li style="color: #2563eb;"><a href="../First-fit/FirstFit.html">First-Fit</a></li>
-                <li style="color: #2563eb;"><a href="../RoundRobin/RoundRobin.html">Round Robin</a></li>
-                <li style="color: #2563eb;"><a href="../Prioridade/Prioridade.html">Escalonador por prioridade</a></li>
-                <li style="color: #2563eb;"><a href="./BestFit.html">Best-Fit</a></li>
-                <li style="color: #2563eb;"><a href="../Preemptiva/Preemptiva.html">Preemptiva</a></li>
-                <li style="color: #2563eb;"><a href="../Processo/Processo.html">Escalonador de processos</a></li>
-            </ul>
-                
-                
-            
-        </div>
-        
-        <div class="second-content-form">
-            
-            <section class="second-content-FirstFit">
-                
-                    
-                <h2>Simulador Best-Fit</h2>
-                
-                <div class="form">
-                    <div >
-                        <!--AREA DO FORMULARIO-->
                     </div>
                     
-                        <h3>Resultado:</h3>
-                        <div class="resultado">
-                            
-                            <!--AREA DO RESULTADO-->
-                        </div>
+                </nav>
+                
+                <div class="hero container">
                     
-                
+                    <h1>SIMULADORES DE ALGORITMOS COM JAVASCRIPT</h1>
+                    
                 </div>
+            </header>
+            
+        </div >
+          
+        <main>
+            <div class='content'>
+        
+                <section class="primary-content">
+                    
+                    
+                        <h2>Simuladores</h2>
+                        
+                        <ul>
+                            <li style="color: #2563eb;"><a href="../index.html">Relatório</a></li>
+                            <li style="color: #2563eb;"><a href="./FirstFit.html">First-Fit</a></li>
+                            <li style="color: #2563eb;"><a href="../RoundRobin/RoundRobin.html">Round Robin</a></li>
+                            <li style="color: #2563eb;"><a href="../Prioridade/Prioridade.html">Escalonador por prioridade</a></li>
+                            <li style="color: #2563eb;"><a href="./BestFit.html">Best-Fit</a></li>
+                            <li style="color: #2563eb;"><a href="../Preemptiva/Preemptiva.html">Preemptiva</a></li>
+                            <li style="color: #2563eb;"><a href="../Processo/Processo.html">Escalonador de processos</a></li>
+                        </ul>
+                            
+                            
+                        
                 
-                  
                 
-                  
+                </section>
+                
+                <section class="second-content-form">
+                
+                    
+                        <h2>Simulador Best-Fit Allocation</h2>
+                        
+                        <div class="form">
+                            <div >
+                                <label for="memoryBlocksInput">Insira os tamanhos dos blocos de memória separados por vírgula:</label><br>
+                                <input type="text" id="memoryBlocksInput"><br>
+                              
+                                <label for="blockSizeNeededInput">Insira o tamanho do bloco necessário:</label><br>
+                                <input type="text" id="blockSizeNeededInput"><br>
+                              
+                                <button class="btn-button" onclick="allocateMemory()">Alocar Memória</button>
+                                  
+                            </div>
+                            
+                                <h3>Resultado:</h3>
+                                <div class="resultado">
+                                    <span id="result"></span>
+                                </div>
+                            
+                        
+                        </div>
+                        
+                          
+                        
+                          
+                
+                
+                </section>
+            
+            </div>
         
         
-        </section>
-        </div>
-    
-    </div>
-
-    
-</body>
+        </main>
+        
+        <script src="./script.js"></script>
+    </body>
 </html>
